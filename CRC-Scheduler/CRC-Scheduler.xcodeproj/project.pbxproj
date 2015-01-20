@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3B59B311A6EBCFC00ED7752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B301A6EBCFC00ED7752 /* main.m */; };
+		A3B59B341A6EBCFC00ED7752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B331A6EBCFC00ED7752 /* AppDelegate.m */; };
+		A3B59B371A6EBCFC00ED7752 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B361A6EBCFC00ED7752 /* ViewController.m */; };
+		A3B59B3A1A6EBCFC00ED7752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B59B381A6EBCFC00ED7752 /* Main.storyboard */; };
+		A3B59B3C1A6EBCFC00ED7752 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B59B3B1A6EBCFC00ED7752 /* Images.xcassets */; };
+		A3B59B3F1A6EBCFC00ED7752 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B59B3D1A6EBCFC00ED7752 /* LaunchScreen.xib */; };
+		A3B59B4B1A6EBCFC00ED7752 /* CRC_SchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B4A1A6EBCFC00ED7752 /* CRC_SchedulerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3B59B451A6EBCFC00ED7752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B59B231A6EBCFC00ED7752 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B59B2A1A6EBCFC00ED7752;
+			remoteInfo = "CRC-Scheduler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3B59B2B1A6EBCFC00ED7752 /* CRC-Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRC-Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B59B2F1A6EBCFC00ED7752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B59B301A6EBCFC00ED7752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3B59B321A6EBCFC00ED7752 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3B59B331A6EBCFC00ED7752 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3B59B351A6EBCFC00ED7752 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3B59B361A6EBCFC00ED7752 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3B59B391A6EBCFC00ED7752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3B59B3B1A6EBCFC00ED7752 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A3B59B3E1A6EBCFC00ED7752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A3B59B441A6EBCFC00ED7752 /* CRC-SchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRC-SchedulerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B59B491A6EBCFC00ED7752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B59B4A1A6EBCFC00ED7752 /* CRC_SchedulerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRC_SchedulerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3B59B281A6EBCFC00ED7752 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B59B411A6EBCFC00ED7752 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3B59B221A6EBCFC00ED7752 = {
+			isa = PBXGroup;
+			children = (
+				A3B59B2D1A6EBCFC00ED7752 /* CRC-Scheduler */,
+				A3B59B471A6EBCFC00ED7752 /* CRC-SchedulerTests */,
+				A3B59B2C1A6EBCFC00ED7752 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3B59B2C1A6EBCFC00ED7752 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3B59B2B1A6EBCFC00ED7752 /* CRC-Scheduler.app */,
+				A3B59B441A6EBCFC00ED7752 /* CRC-SchedulerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3B59B2D1A6EBCFC00ED7752 /* CRC-Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				A3B59B321A6EBCFC00ED7752 /* AppDelegate.h */,
+				A3B59B331A6EBCFC00ED7752 /* AppDelegate.m */,
+				A3B59B351A6EBCFC00ED7752 /* ViewController.h */,
+				A3B59B361A6EBCFC00ED7752 /* ViewController.m */,
+				A3B59B381A6EBCFC00ED7752 /* Main.storyboard */,
+				A3B59B3B1A6EBCFC00ED7752 /* Images.xcassets */,
+				A3B59B3D1A6EBCFC00ED7752 /* LaunchScreen.xib */,
+				A3B59B2E1A6EBCFC00ED7752 /* Supporting Files */,
+			);
+			path = "CRC-Scheduler";
+			sourceTree = "<group>";
+		};
+		A3B59B2E1A6EBCFC00ED7752 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3B59B2F1A6EBCFC00ED7752 /* Info.plist */,
+				A3B59B301A6EBCFC00ED7752 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3B59B471A6EBCFC00ED7752 /* CRC-SchedulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3B59B4A1A6EBCFC00ED7752 /* CRC_SchedulerTests.m */,
+				A3B59B481A6EBCFC00ED7752 /* Supporting Files */,
+			);
+			path = "CRC-SchedulerTests";
+			sourceTree = "<group>";
+		};
+		A3B59B481A6EBCFC00ED7752 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3B59B491A6EBCFC00ED7752 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3B59B2A1A6EBCFC00ED7752 /* CRC-Scheduler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B59B4E1A6EBCFC00ED7752 /* Build configuration list for PBXNativeTarget "CRC-Scheduler" */;
+			buildPhases = (
+				A3B59B271A6EBCFC00ED7752 /* Sources */,
+				A3B59B281A6EBCFC00ED7752 /* Frameworks */,
+				A3B59B291A6EBCFC00ED7752 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CRC-Scheduler";
+			productName = "CRC-Scheduler";
+			productReference = A3B59B2B1A6EBCFC00ED7752 /* CRC-Scheduler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3B59B431A6EBCFC00ED7752 /* CRC-SchedulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B59B511A6EBCFC00ED7752 /* Build configuration list for PBXNativeTarget "CRC-SchedulerTests" */;
+			buildPhases = (
+				A3B59B401A6EBCFC00ED7752 /* Sources */,
+				A3B59B411A6EBCFC00ED7752 /* Frameworks */,
+				A3B59B421A6EBCFC00ED7752 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3B59B461A6EBCFC00ED7752 /* PBXTargetDependency */,
+			);
+			name = "CRC-SchedulerTests";
+			productName = "CRC-SchedulerTests";
+			productReference = A3B59B441A6EBCFC00ED7752 /* CRC-SchedulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3B59B231A6EBCFC00ED7752 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Cody Mace";
+				TargetAttributes = {
+					A3B59B2A1A6EBCFC00ED7752 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A3B59B431A6EBCFC00ED7752 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A3B59B2A1A6EBCFC00ED7752;
+					};
+				};
+			};
+			buildConfigurationList = A3B59B261A6EBCFC00ED7752 /* Build configuration list for PBXProject "CRC-Scheduler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3B59B221A6EBCFC00ED7752;
+			productRefGroup = A3B59B2C1A6EBCFC00ED7752 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3B59B2A1A6EBCFC00ED7752 /* CRC-Scheduler */,
+				A3B59B431A6EBCFC00ED7752 /* CRC-SchedulerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3B59B291A6EBCFC00ED7752 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B59B3A1A6EBCFC00ED7752 /* Main.storyboard in Resources */,
+				A3B59B3F1A6EBCFC00ED7752 /* LaunchScreen.xib in Resources */,
+				A3B59B3C1A6EBCFC00ED7752 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B59B421A6EBCFC00ED7752 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3B59B271A6EBCFC00ED7752 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B59B371A6EBCFC00ED7752 /* ViewController.m in Sources */,
+				A3B59B341A6EBCFC00ED7752 /* AppDelegate.m in Sources */,
+				A3B59B311A6EBCFC00ED7752 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B59B401A6EBCFC00ED7752 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B59B4B1A6EBCFC00ED7752 /* CRC_SchedulerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3B59B461A6EBCFC00ED7752 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3B59B2A1A6EBCFC00ED7752 /* CRC-Scheduler */;
+			targetProxy = A3B59B451A6EBCFC00ED7752 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3B59B381A6EBCFC00ED7752 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3B59B391A6EBCFC00ED7752 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3B59B3D1A6EBCFC00ED7752 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3B59B3E1A6EBCFC00ED7752 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3B59B4C1A6EBCFC00ED7752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A3B59B4D1A6EBCFC00ED7752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3B59B4F1A6EBCFC00ED7752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CRC-Scheduler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3B59B501A6EBCFC00ED7752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CRC-Scheduler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3B59B521A6EBCFC00ED7752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CRC-SchedulerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CRC-Scheduler.app/CRC-Scheduler";
+			};
+			name = Debug;
+		};
+		A3B59B531A6EBCFC00ED7752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CRC-SchedulerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CRC-Scheduler.app/CRC-Scheduler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3B59B261A6EBCFC00ED7752 /* Build configuration list for PBXProject "CRC-Scheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B59B4C1A6EBCFC00ED7752 /* Debug */,
+				A3B59B4D1A6EBCFC00ED7752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B59B4E1A6EBCFC00ED7752 /* Build configuration list for PBXNativeTarget "CRC-Scheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B59B4F1A6EBCFC00ED7752 /* Debug */,
+				A3B59B501A6EBCFC00ED7752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3B59B511A6EBCFC00ED7752 /* Build configuration list for PBXNativeTarget "CRC-SchedulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B59B521A6EBCFC00ED7752 /* Debug */,
+				A3B59B531A6EBCFC00ED7752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3B59B231A6EBCFC00ED7752 /* Project object */;
+}
