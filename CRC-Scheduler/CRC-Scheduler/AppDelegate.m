@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIColor+CRCAdditions.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setNavBarAppearance];
     return YES;
+}
+
+- (void)setNavBarAppearance {
+    UINavigationBar *navBarAppearance = [UINavigationBar appearance];
+    NSDictionary *navbarTitleTextAttributes = @{UITextAttributeTextColor: [UIColor CRCGreenColor],
+                                                UITextAttributeTextShadowColor: [UIColor clearColor],
+                                                UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0, 0)]};
+
+    [navBarAppearance setTitleTextAttributes:navbarTitleTextAttributes];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

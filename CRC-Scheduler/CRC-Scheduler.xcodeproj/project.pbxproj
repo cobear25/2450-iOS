@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A322B0321A700EF9000C0DCD /* UIColor+CRCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A322B0311A700EF9000C0DCD /* UIColor+CRCAdditions.m */; };
 		A3B59B311A6EBCFC00ED7752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B301A6EBCFC00ED7752 /* main.m */; };
 		A3B59B341A6EBCFC00ED7752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B331A6EBCFC00ED7752 /* AppDelegate.m */; };
 		A3B59B371A6EBCFC00ED7752 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B361A6EBCFC00ED7752 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		A3B59B3C1A6EBCFC00ED7752 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B59B3B1A6EBCFC00ED7752 /* Images.xcassets */; };
 		A3B59B3F1A6EBCFC00ED7752 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B59B3D1A6EBCFC00ED7752 /* LaunchScreen.xib */; };
 		A3B59B4B1A6EBCFC00ED7752 /* CRC_SchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B4A1A6EBCFC00ED7752 /* CRC_SchedulerTests.m */; };
+		A3C5CE721A70A24E0058645B /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C5CE711A70A24E0058645B /* ScheduleViewController.m */; };
+		A3C5CE751A70A26C0058645B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C5CE741A70A26C0058645B /* SignUpViewController.m */; };
+		A3C5CE781A70A29C0058645B /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C5CE771A70A29C0058645B /* RequestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A322B0301A700EF9000C0DCD /* UIColor+CRCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRCAdditions.h"; sourceTree = "<group>"; };
+		A322B0311A700EF9000C0DCD /* UIColor+CRCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRCAdditions.m"; sourceTree = "<group>"; };
 		A3B59B2B1A6EBCFC00ED7752 /* CRC-Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRC-Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B59B2F1A6EBCFC00ED7752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B59B301A6EBCFC00ED7752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +46,12 @@
 		A3B59B441A6EBCFC00ED7752 /* CRC-SchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CRC-SchedulerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B59B491A6EBCFC00ED7752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B59B4A1A6EBCFC00ED7752 /* CRC_SchedulerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRC_SchedulerTests.m; sourceTree = "<group>"; };
+		A3C5CE701A70A24E0058645B /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		A3C5CE711A70A24E0058645B /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		A3C5CE731A70A26C0058645B /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		A3C5CE741A70A26C0058645B /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		A3C5CE761A70A29C0058645B /* RequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
+		A3C5CE771A70A29C0058645B /* RequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +93,15 @@
 		A3B59B2D1A6EBCFC00ED7752 /* CRC-Scheduler */ = {
 			isa = PBXGroup;
 			children = (
+				A3C5CE6F1A70A2150058645B /* ViewControllers */,
 				A3B59B321A6EBCFC00ED7752 /* AppDelegate.h */,
 				A3B59B331A6EBCFC00ED7752 /* AppDelegate.m */,
-				A3B59B351A6EBCFC00ED7752 /* ViewController.h */,
-				A3B59B361A6EBCFC00ED7752 /* ViewController.m */,
 				A3B59B381A6EBCFC00ED7752 /* Main.storyboard */,
 				A3B59B3B1A6EBCFC00ED7752 /* Images.xcassets */,
 				A3B59B3D1A6EBCFC00ED7752 /* LaunchScreen.xib */,
 				A3B59B2E1A6EBCFC00ED7752 /* Supporting Files */,
+				A322B0301A700EF9000C0DCD /* UIColor+CRCAdditions.h */,
+				A322B0311A700EF9000C0DCD /* UIColor+CRCAdditions.m */,
 			);
 			path = "CRC-Scheduler";
 			sourceTree = "<group>";
@@ -117,6 +130,21 @@
 				A3B59B491A6EBCFC00ED7752 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3C5CE6F1A70A2150058645B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3B59B351A6EBCFC00ED7752 /* ViewController.h */,
+				A3B59B361A6EBCFC00ED7752 /* ViewController.m */,
+				A3C5CE701A70A24E0058645B /* ScheduleViewController.h */,
+				A3C5CE711A70A24E0058645B /* ScheduleViewController.m */,
+				A3C5CE731A70A26C0058645B /* SignUpViewController.h */,
+				A3C5CE741A70A26C0058645B /* SignUpViewController.m */,
+				A3C5CE761A70A29C0058645B /* RequestViewController.h */,
+				A3C5CE771A70A29C0058645B /* RequestViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A322B0321A700EF9000C0DCD /* UIColor+CRCAdditions.m in Sources */,
+				A3C5CE781A70A29C0058645B /* RequestViewController.m in Sources */,
 				A3B59B371A6EBCFC00ED7752 /* ViewController.m in Sources */,
+				A3C5CE751A70A26C0058645B /* SignUpViewController.m in Sources */,
+				A3C5CE721A70A24E0058645B /* ScheduleViewController.m in Sources */,
 				A3B59B341A6EBCFC00ED7752 /* AppDelegate.m in Sources */,
 				A3B59B311A6EBCFC00ED7752 /* main.m in Sources */,
 			);
@@ -412,6 +444,7 @@
 				A3B59B501A6EBCFC00ED7752 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3B59B511A6EBCFC00ED7752 /* Build configuration list for PBXNativeTarget "CRC-SchedulerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +453,7 @@
 				A3B59B531A6EBCFC00ED7752 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
