@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface RequestViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *startDateView;
+@property (weak, nonatomic) IBOutlet UIView *endDateView;
+@property (weak, nonatomic) IBOutlet UISwitch *ptoSwitch;
+@property (weak, nonatomic) IBOutlet UITextField *hoursTextField;
+@property (weak, nonatomic) IBOutlet UITextView *reasonTextView;
 
 @end

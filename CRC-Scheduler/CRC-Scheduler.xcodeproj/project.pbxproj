@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A322B0321A700EF9000C0DCD /* UIColor+CRCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A322B0311A700EF9000C0DCD /* UIColor+CRCAdditions.m */; };
+		A36EB9A31A812B4400A68C6A /* EditDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36EB9A21A812B4400A68C6A /* EditDateViewController.m */; };
 		A3B59B311A6EBCFC00ED7752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B301A6EBCFC00ED7752 /* main.m */; };
 		A3B59B341A6EBCFC00ED7752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B331A6EBCFC00ED7752 /* AppDelegate.m */; };
 		A3B59B371A6EBCFC00ED7752 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B361A6EBCFC00ED7752 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		A322B0301A700EF9000C0DCD /* UIColor+CRCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRCAdditions.h"; sourceTree = "<group>"; };
 		A322B0311A700EF9000C0DCD /* UIColor+CRCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRCAdditions.m"; sourceTree = "<group>"; };
+		A36EB9A11A812B4400A68C6A /* EditDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDateViewController.h; sourceTree = "<group>"; };
+		A36EB9A21A812B4400A68C6A /* EditDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDateViewController.m; sourceTree = "<group>"; };
 		A3B59B2B1A6EBCFC00ED7752 /* CRC-Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRC-Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B59B2F1A6EBCFC00ED7752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B59B301A6EBCFC00ED7752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				A3C5CE741A70A26C0058645B /* SignUpViewController.m */,
 				A3C5CE761A70A29C0058645B /* RequestViewController.h */,
 				A3C5CE771A70A29C0058645B /* RequestViewController.m */,
+				A36EB9A11A812B4400A68C6A /* EditDateViewController.h */,
+				A36EB9A21A812B4400A68C6A /* EditDateViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				A3C5CE751A70A26C0058645B /* SignUpViewController.m in Sources */,
 				A3C5CE721A70A24E0058645B /* ScheduleViewController.m in Sources */,
 				A3B59B341A6EBCFC00ED7752 /* AppDelegate.m in Sources */,
+				A36EB9A31A812B4400A68C6A /* EditDateViewController.m in Sources */,
 				A3B59B311A6EBCFC00ED7752 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
