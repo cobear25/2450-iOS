@@ -24,13 +24,6 @@
     self.navigationController.navigationBarHidden = YES;
     self.usernameTextField.delegate = self;
     self.passwordTextField.delegate = self;
-//    UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
-//    UIView *paddingView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
-
-//    self.usernameTextField.leftView = paddingView;
-//    self.usernameTextField.leftViewMode = UITextFieldViewModeAlways;
-//    self.passwordTextField.leftView = paddingView2;
-//    self.passwordTextField.leftViewMode = UITextFieldViewModeAlways;
 
     self.usernameTextField.layer.borderColor = [UIColor CRCGreenColor].CGColor;
     self.usernameTextField.layer.borderWidth = 1;
