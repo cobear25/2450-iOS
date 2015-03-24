@@ -8,6 +8,7 @@
 
 #import "SignUpViewController.h"
 #import "UIColor+CRCAdditions.h"
+#import "APIClient.h"
 
 @implementation SignUpViewController
 

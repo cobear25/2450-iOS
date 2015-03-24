@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIColor+CRCAdditions.h"
+#import "APIClient.h"
 
 @interface ViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
@@ -31,6 +32,9 @@
     self.passwordTextField.layer.borderColor = [UIColor CRCGreenColor].CGColor;
     self.passwordTextField.layer.borderWidth = 1;
     self.passwordTextField.layer.cornerRadius = 4;
+
+    APIClient *client = [APIClient new];
+    [client logIn];
 }
 
 - (void)didReceiveMemoryWarning {
