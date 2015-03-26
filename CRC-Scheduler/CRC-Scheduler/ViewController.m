@@ -35,6 +35,8 @@
 
     APIClient *client = [APIClient new];
     [client logIn];
+
+    [client getShiftsForUser:6];
 }
 
 - (void)didReceiveMemoryWarning {

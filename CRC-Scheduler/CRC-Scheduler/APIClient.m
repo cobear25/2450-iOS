@@ -12,7 +12,17 @@
 
 - (void)logIn {
     NSDictionary *params = @{@"username": @"cmace"};
-    [self GET:@"http://cs2450-web.herokuapp.com/api/users/2/" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [self GET:@"http://cs2450-web.herokuapp.com/api/users/" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+}
+
+- (void)getShiftsForUser:(NSInteger)userID {
+    NSDictionary *params = @{@"username": @"cmace"};
+    NSString *url = [NSString stringWithFormat:@"http://cs2450-web.herokuapp.com/api/shifts/%ld/", (long)userID];
+    [self GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);

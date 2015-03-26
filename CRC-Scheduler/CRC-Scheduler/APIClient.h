@@ -12,4 +12,6 @@
 
 - (void)logIn;
 
+- (void)getShiftsForUser:(NSInteger)userID;
+
 @end
