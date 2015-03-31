@@ -8,10 +8,15 @@
 
 #import "AFHTTPRequestOperationManager.h"
 
+typedef void(^APIClientErrorBlock)(AFHTTPRequestOperation *operation, NSError *error);
+
 @interface APIClient : AFHTTPRequestOperationManager
 
-- (void)logIn;
+- (void)logInWithUsername:(NSString *)username success:(void (^)())success
+                  failure:(APIClientErrorBlock)failure;
 
 - (void)getShiftsForUser:(NSInteger)userID;
+
+- (void)getTokenForUsername:(NSString *)username Password:(NSString *)password;
 
 @end

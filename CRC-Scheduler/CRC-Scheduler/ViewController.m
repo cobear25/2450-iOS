@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpaceConstraint;
+@property (strong, nonatomic) APIClient *client;
 
 @end
 
@@ -33,10 +34,9 @@
     self.passwordTextField.layer.borderWidth = 1;
     self.passwordTextField.layer.cornerRadius = 4;
 
-    APIClient *client = [APIClient new];
-    [client logIn];
+   self.client = [APIClient new];
 
-    [client getShiftsForUser:6];
+//    [self.client getTokenForUsername:@"cmace" Password:@"test123"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,5 +53,24 @@
     [UIView animateWithDuration:0.4 animations:^{
         self.topSpaceConstraint.constant += 60;
     }];
+}
+- (IBAction)logInTapped:(UIButton *)sender {
+    if ([self.usernameTextField.text isEqualToString:@""]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please enter your username." message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Logging In ..." message:@"\n" delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+        UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        [indicator startAnimating];
+        [alert setValue:indicator forKey:@"accessoryView"];
+        [alert show];
+        [self.client logInWithUsername:self.usernameTextField.text success:^{
+            NSLog(@"log in");
+            [alert dismissWithClickedButtonIndex:0 animated:NO];
+            [self performSegueWithIdentifier:@"login" sender:self];
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"log in error: %@", error);
+        }];
+    }
 }
 @end

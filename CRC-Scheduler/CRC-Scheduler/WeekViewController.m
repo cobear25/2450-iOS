@@ -70,7 +70,19 @@
     shiftLabel.text = @"5:00 - 9:30";
     [shift addSubview:shiftLabel];
 
+    UIView *shift2 = [[UIView alloc] initWithFrame:CGRectMake(10 + shift.frame.size.width, 0, cell.frame.size.width/2, cell.scrollView.frame.size.height)];
+    shift2.backgroundColor = [UIColor orangeColor];
+
+    UILabel *shift2Label = [[UILabel alloc] initWithFrame:shift.frame];
+    shift2Label.text = @"1:00 - 6:30";
+    [shift2 addSubview:shift2Label];
+
+
     [cell.scrollView addSubview:shift];
+    [cell.scrollView addSubview:shift2];
+    CGSize newSize = cell.scrollView.frame.size;
+    newSize.width *= 2;
+    [cell.scrollView setContentSize:newSize];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CPa-iF-rYk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CPa-iF-rYk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -70,7 +70,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="awR-mB-Pz9" kind="push" id="22P-Ff-wVa"/>
+                                    <action selector="logInTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RAh-LX-anT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,11 +94,12 @@
                         <outlet property="passwordTextField" destination="7jd-aq-wNT" id="KZZ-PG-2fh"/>
                         <outlet property="topSpaceConstraint" destination="Wpf-pp-UEx" id="Wxq-JN-wlE"/>
                         <outlet property="usernameTextField" destination="Err-RY-cnt" id="f1U-PN-XUE"/>
+                        <segue destination="awR-mB-Pz9" kind="push" identifier="login" id="fVz-ic-NoF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128" y="357"/>
+            <point key="canvasLocation" x="128" y="344"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="kbz-sa-1UO">
