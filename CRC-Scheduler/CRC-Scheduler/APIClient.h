@@ -12,11 +12,15 @@ typedef void(^APIClientErrorBlock)(AFHTTPRequestOperation *operation, NSError *e
 
 @interface APIClient : AFHTTPRequestOperationManager
 
++ (instancetype)sharedClient;
+
 - (void)logInWithUsername:(NSString *)username success:(void (^)())success
                   failure:(APIClientErrorBlock)failure;
 
-- (void)getShiftsForUser:(NSInteger)userID;
+- (void)getShiftsOnSuccess:(void (^)(id json))success failure:(APIClientErrorBlock)failure;
 
-- (void)getTokenForUsername:(NSString *)username Password:(NSString *)password;
+- (void)getTokenForUsername:(NSString *)username Password:(NSString *)password success:(void (^)())success failure:(APIClientErrorBlock)failure;
+- (void)getRoleForNumber:(NSInteger)number success:(void (^)(id json))success failure:(APIClientErrorBlock)failure;
+- (void)getRoles:(void (^)(id json))success failure:(APIClientErrorBlock)failure;
 
 @end

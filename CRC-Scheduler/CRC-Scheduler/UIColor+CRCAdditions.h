@@ -12,4 +12,6 @@
 
 + (UIColor *)CRCGreenColor;
 
++ (UIColor *)colorFromHexString:(NSString *)hexString;
+
 @end

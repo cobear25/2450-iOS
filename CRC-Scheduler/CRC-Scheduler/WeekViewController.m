@@ -8,6 +8,9 @@
 
 #import "WeekViewController.h"
 #import "WeekViewTableViewCell.h"
+#import "Shift.h"
+#import "Role.h"
+#import "UIColor+CRCAdditions.h"
 
 @interface WeekViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView *tableView;
@@ -18,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.shifts = [[NSMutableArray alloc] init];
+    self.shiftDays = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,29 +64,48 @@
         case 6:
             cell.dayLabel.text = @"S U N";
             break;
-
         default:
             break;
     }
-    UIView *shift = [[UIView alloc] initWithFrame:CGRectMake(5, 0, cell.frame.size.width/2, cell.scrollView.frame.size.height)];
-    shift.backgroundColor = [UIColor greenColor];
+    int shiftCount = 0;
+    for (int i = 0; i<self.shifts.count; i++) {
+        if (indexPath.row == [[self.shiftDays objectAtIndex:i] intValue]) {
+            Shift *shift = [self.shifts objectAtIndex:i];
 
-    UILabel *shiftLabel = [[UILabel alloc] initWithFrame:shift.frame];
-    shiftLabel.text = @"5:00 - 9:30";
-    [shift addSubview:shiftLabel];
+            Role *role;
+            if (shift.role) {
+                role = [self.roles objectAtIndex:shift.role - 1];
+            } else {
+                role = [[Role alloc] init];
+                role.colorString = @"#ffffff";
+                role.title = @"Unknown Role";
+                role.descriptionString = @"";
+            }
 
-    UIView *shift2 = [[UIView alloc] initWithFrame:CGRectMake(10 + shift.frame.size.width, 0, cell.frame.size.width/2, cell.scrollView.frame.size.height)];
-    shift2.backgroundColor = [UIColor orangeColor];
+            CGFloat shiftWidth = cell.frame.size.width;// - cell.frame.size.width/3;
+            UIView *shiftView = [[UIView alloc] initWithFrame:CGRectMake(shiftCount * shiftWidth + (shiftCount+1)*5, 0, cell.frame.size.width, cell.scrollView.frame.size.height)];
+            shiftView.backgroundColor = [UIColor colorFromHexString:role.colorString];
+            
+            UILabel *shiftLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 0, shiftWidth/2, shiftView.frame.size.height)];
+            NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+            [timeFormatter setDateFormat:@"HH:mm"];
+            NSString *startTime = [timeFormatter stringFromDate:shift.startTime];
+            NSString *endTime = [timeFormatter stringFromDate:shift.endTime];
 
-    UILabel *shift2Label = [[UILabel alloc] initWithFrame:shift.frame];
-    shift2Label.text = @"1:00 - 6:30";
-    [shift2 addSubview:shift2Label];
+            shiftLabel.text = [NSString stringWithFormat:@"%@ - %@", startTime, endTime];
+            [shiftView addSubview:shiftLabel];
 
+            UILabel *roleTitle = [[UILabel alloc] initWithFrame:CGRectMake(shiftWidth/2, 0, shiftWidth/2, shiftView.frame.size.height)];
+            roleTitle.text = role.title;
+            roleTitle.font = [UIFont systemFontOfSize:20];
+            [shiftView addSubview:roleTitle];
 
-    [cell.scrollView addSubview:shift];
-    [cell.scrollView addSubview:shift2];
-    CGSize newSize = cell.scrollView.frame.size;
-    newSize.width *= 2;
+            [cell.scrollView addSubview:shiftView];
+            shiftCount += 1;
+        }
+    }
+    CGSize newSize = cell.frame.size;
+    newSize.width *= shiftCount;
     [cell.scrollView setContentSize:newSize];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -94,6 +118,5 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80.0;
 }
-
 
 @end

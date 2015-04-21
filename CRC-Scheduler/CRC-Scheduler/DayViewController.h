@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DayViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *shifts;
+@property (strong, nonatomic)NSMutableArray *roles;
 @end

@@ -10,4 +10,8 @@
 
 @interface WeekViewController : UIViewController
 
+@property (strong, nonatomic)NSMutableArray *shifts;
+@property (strong, nonatomic)NSMutableArray *shiftDays;
+@property (strong, nonatomic)NSMutableArray *roles;
+
 @end

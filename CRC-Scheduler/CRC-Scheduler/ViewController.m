@@ -34,9 +34,9 @@
     self.passwordTextField.layer.borderWidth = 1;
     self.passwordTextField.layer.cornerRadius = 4;
 
-   self.client = [APIClient new];
+   self.client = [APIClient sharedClient];
 
-//    [self.client getTokenForUsername:@"cmace" Password:@"test123"];
+//    [self.client getShiftsForUser:1];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,21 +55,26 @@
     }];
 }
 - (IBAction)logInTapped:(UIButton *)sender {
-    if ([self.usernameTextField.text isEqualToString:@""]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please enter your username." message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    if ([self.usernameTextField.text isEqualToString:@""] || [self.passwordTextField.text isEqualToString:@""]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please enter your username and password." message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Logging In ..." message:@"\n" delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Logging In..." message:@"\n" delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
         UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [indicator startAnimating];
         [alert setValue:indicator forKey:@"accessoryView"];
         [alert show];
-        [self.client logInWithUsername:self.usernameTextField.text success:^{
-            NSLog(@"log in");
+        [self.client getTokenForUsername:self.usernameTextField.text Password:self.passwordTextField.text success:^{
             [alert dismissWithClickedButtonIndex:0 animated:NO];
+
+            [[NSUserDefaults standardUserDefaults] setObject:self.usernameTextField.text forKey:@"username"];
             [self performSegueWithIdentifier:@"login" sender:self];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"log in error: %@", error);
+            NSLog(@"%@", error);
+            [alert dismissWithClickedButtonIndex:0 animated:NO];
+            UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Invalid username and/or password" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [errorAlert show];
+            self.passwordTextField.text = @"";
         }];
     }
 }

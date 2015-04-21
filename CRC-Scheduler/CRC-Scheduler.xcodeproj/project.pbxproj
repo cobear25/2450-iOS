@@ -10,8 +10,12 @@
 		67657BC0B8BC7C86C58E57A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC884865BD8BC5E475AD5736 /* libPods.a */; };
 		A31589E71AAFA3A600CD163F /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31589E61AAFA3A600CD163F /* DayViewController.m */; };
 		A322B0321A700EF9000C0DCD /* UIColor+CRCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A322B0311A700EF9000C0DCD /* UIColor+CRCAdditions.m */; };
+		A3507D211ACD9088006CDFE2 /* Shift.m in Sources */ = {isa = PBXBuildFile; fileRef = A3507D201ACD9088006CDFE2 /* Shift.m */; };
 		A36EB9A31A812B4400A68C6A /* EditDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36EB9A21A812B4400A68C6A /* EditDateViewController.m */; };
 		A39CB2A91AB87FCD00358E20 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A39CB2A81AB87FCD00358E20 /* WeekViewController.m */; };
+		A3B262A71ADCA17200414B87 /* MonthDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B262A51ADCA17200414B87 /* MonthDetailTableViewCell.m */; };
+		A3B262A81ADCA17200414B87 /* MonthDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B262A61ADCA17200414B87 /* MonthDetailTableViewCell.xib */; };
+		A3B262AB1ADD5CD900414B87 /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B262AA1ADD5CD900414B87 /* Role.m */; };
 		A3B59B311A6EBCFC00ED7752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B301A6EBCFC00ED7752 /* main.m */; };
 		A3B59B341A6EBCFC00ED7752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B331A6EBCFC00ED7752 /* AppDelegate.m */; };
 		A3B59B371A6EBCFC00ED7752 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B59B361A6EBCFC00ED7752 /* ViewController.m */; };
@@ -46,10 +50,17 @@
 		A31589E61AAFA3A600CD163F /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
 		A322B0301A700EF9000C0DCD /* UIColor+CRCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRCAdditions.h"; sourceTree = "<group>"; };
 		A322B0311A700EF9000C0DCD /* UIColor+CRCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRCAdditions.m"; sourceTree = "<group>"; };
+		A3507D1F1ACD9088006CDFE2 /* Shift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shift.h; sourceTree = "<group>"; };
+		A3507D201ACD9088006CDFE2 /* Shift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shift.m; sourceTree = "<group>"; };
 		A36EB9A11A812B4400A68C6A /* EditDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDateViewController.h; sourceTree = "<group>"; };
 		A36EB9A21A812B4400A68C6A /* EditDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDateViewController.m; sourceTree = "<group>"; };
 		A39CB2A71AB87FCD00358E20 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		A39CB2A81AB87FCD00358E20 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
+		A3B262A41ADCA17200414B87 /* MonthDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthDetailTableViewCell.h; sourceTree = "<group>"; };
+		A3B262A51ADCA17200414B87 /* MonthDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthDetailTableViewCell.m; sourceTree = "<group>"; };
+		A3B262A61ADCA17200414B87 /* MonthDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonthDetailTableViewCell.xib; sourceTree = "<group>"; };
+		A3B262A91ADD5CD900414B87 /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
+		A3B262AA1ADD5CD900414B87 /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Role.m; sourceTree = "<group>"; };
 		A3B59B2B1A6EBCFC00ED7752 /* CRC-Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRC-Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B59B2F1A6EBCFC00ED7752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B59B301A6EBCFC00ED7752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -150,6 +161,10 @@
 				A322B0311A700EF9000C0DCD /* UIColor+CRCAdditions.m */,
 				A3FF57DA1AC1B36600BFD868 /* APIClient.h */,
 				A3FF57DB1AC1B36600BFD868 /* APIClient.m */,
+				A3507D1F1ACD9088006CDFE2 /* Shift.h */,
+				A3507D201ACD9088006CDFE2 /* Shift.m */,
+				A3B262A91ADD5CD900414B87 /* Role.h */,
+				A3B262AA1ADD5CD900414B87 /* Role.m */,
 			);
 			path = "CRC-Scheduler";
 			sourceTree = "<group>";
@@ -210,6 +225,9 @@
 				A3D3DBE91ABB259500349593 /* WeekViewTableViewCell.h */,
 				A3D3DBEA1ABB259500349593 /* WeekViewTableViewCell.m */,
 				A3D3DBEB1ABB259500349593 /* WeekViewTableViewCell.xib */,
+				A3B262A41ADCA17200414B87 /* MonthDetailTableViewCell.h */,
+				A3B262A51ADCA17200414B87 /* MonthDetailTableViewCell.m */,
+				A3B262A61ADCA17200414B87 /* MonthDetailTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -308,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B59B3A1A6EBCFC00ED7752 /* Main.storyboard in Resources */,
+				A3B262A81ADCA17200414B87 /* MonthDetailTableViewCell.xib in Resources */,
 				A3D3DBE81ABB156F00349593 /* DayViewTableViewCell.xib in Resources */,
 				A3B59B3F1A6EBCFC00ED7752 /* LaunchScreen.xib in Resources */,
 				A3D3DBED1ABB259500349593 /* WeekViewTableViewCell.xib in Resources */,
@@ -375,8 +394,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B262A71ADCA17200414B87 /* MonthDetailTableViewCell.m in Sources */,
 				A322B0321A700EF9000C0DCD /* UIColor+CRCAdditions.m in Sources */,
 				A3C5CE781A70A29C0058645B /* RequestViewController.m in Sources */,
+				A3B262AB1ADD5CD900414B87 /* Role.m in Sources */,
 				A3B59B371A6EBCFC00ED7752 /* ViewController.m in Sources */,
 				A3C5CE751A70A26C0058645B /* SignUpViewController.m in Sources */,
 				A39CB2A91AB87FCD00358E20 /* WeekViewController.m in Sources */,
@@ -387,6 +408,7 @@
 				A31589E71AAFA3A600CD163F /* DayViewController.m in Sources */,
 				A3FF57DC1AC1B36600BFD868 /* APIClient.m in Sources */,
 				A36EB9A31A812B4400A68C6A /* EditDateViewController.m in Sources */,
+				A3507D211ACD9088006CDFE2 /* Shift.m in Sources */,
 				A3B59B311A6EBCFC00ED7752 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
